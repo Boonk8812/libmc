@@ -1,4 +1,4 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages (MODIFIED FOR MINECRAFT)
 name: Minecraft YAML
 
 on:
@@ -27,9 +27,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v1
       - name: Download runner image
-        uses: actions/runner-images@v4
+        uses: actions/runner-images@v2
         with:
           source: ./
           destination: ./_site
