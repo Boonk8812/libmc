@@ -27,9 +27,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v1
-      - name: Download runner image
-        uses: actions/runner-images@v2
+        uses: actions/setup-python@v5
+      - name: Download runner
+        uses: actions/runner@v2.313.0
+      - name: Get cache
+        uses: actions/cache@v4
         with:
           source: ./
           destination: ./_site
