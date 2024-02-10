@@ -14,5 +14,5 @@ def place_blocks(x, y):
         for column in range(width):
             mc.setBlock(x + column, y + row, 'AIR')
             mc.setBlock(x + column, y + row, get_random_block())
-
+            
 place_blocks(-100, 64) # Change x and z coordinates as desired
