@@ -7,4 +7,4 @@ clear
 echo "Starting libmc..."
 PATH_TO_PYTHON="/usr/bin/python3" # Or wherever your preferred Python interpreter resides
 $PATH_TO_PYTHON libmc.py
-echo "Done"
+echo "done"
