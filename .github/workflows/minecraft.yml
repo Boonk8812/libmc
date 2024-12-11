@@ -38,11 +38,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Get cache
-        uses: boonk8812/mc@v1
-        with:
-          source: ./
-          destination: ./_site
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
